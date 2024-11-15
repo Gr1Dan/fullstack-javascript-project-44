@@ -6,3 +6,4 @@ const greeting = () => {
     console.log(`Hello, ${playerName}!`);
     return playerName;
 }
+export default greeting
