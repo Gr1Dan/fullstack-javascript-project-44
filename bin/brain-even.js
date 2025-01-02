@@ -6,7 +6,6 @@ const min = 0;
 const max = 99;
 for (let i = 0; i <= 2; i++) {
 const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-console.log(randomNum)
 let correctAnswers = (randomNum) => {
     if (randomNum <= 1) return false;
 if (randomNum === 2) return "yes";
@@ -19,9 +18,11 @@ return 'yes';
 const answers = readlineSync.question(`is ${randomNum} is even?:`)
 if (answers === correctAnswers(randomNum)){
     console.log('correct');
+    if (i === 2){
+        console.log(`Congratulations, ${name}!`);
+    }
 } else  {
     console.log(`${answers} is wrong answer; Correct answers was: ${correctAnswers(randomNum)}`);
     console.log(`Let's try again, ${name}!`);
     break;
 }}
-console.log(`Congratulations, ${name}!`);
