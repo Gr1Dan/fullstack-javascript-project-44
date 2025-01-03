@@ -12,8 +12,6 @@ const shuffledOperations = operations.sort(() => Math.random() - 0.5);
         const randomNum1 = Math.floor(Math.random() * (max - min + 1)) + min;
         const randomNum2 = Math.floor(Math.random() * (max - min + 1)) + min;
         if (results === -1){
-            console.log(`Your answer is wrong.`);
-            console.log(`Let's try again, ${name}!`);
             break;
         }
         switch (operation) {
@@ -28,6 +26,8 @@ const shuffledOperations = operations.sort(() => Math.random() - 0.5);
 
                 } else {
                     results = -1
+                    console.log(`'${answer1}' is wrong ;(. Correct answers was: '${correctAnswer1}'`);
+                    console.log(`Let's try again, ${name}!`);
                     break;
                 }
             case 'subtraction':
@@ -40,9 +40,10 @@ const shuffledOperations = operations.sort(() => Math.random() - 0.5);
                     break;
                 } else {
                     results = -1
+                    console.log(`'${answer2}' is wrong ;(. Correct answers was: '${correctAnswer2}'`);
+                    console.log(`Let's try again, ${name}!`);
                     break;
                 }
-
             case 'multiplication':
                 console.log(`What is result of ${randomNum1} * ${randomNum2}`);
                 const answer3 = readlineSync.question() - 0;
@@ -53,10 +54,10 @@ const shuffledOperations = operations.sort(() => Math.random() - 0.5);
                     break;
                 } else {
                     results = -1
+                    console.log(`'${answer3}' is wrong ;(. Correct answers was: '${correctAnswer3}'`);
+                    console.log(`Let's try again, ${name}!`);
                     break;
-
                 }
-
         }
     }
 if (results === 3) {

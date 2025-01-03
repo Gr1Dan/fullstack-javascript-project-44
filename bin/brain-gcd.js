@@ -24,6 +24,7 @@ if (asnwer === correctAnswer()){
 
     }
 } else {
-    console.log(`${asnwer} is wrong answer. Let's try again ${name}`);
+    console.log(`"${asnwer}" is wrong answer ;(. Correct answer: ${correctAnswer()})`);
+    console.log(`Let's try again ${name}!`);
     break;
 }}
