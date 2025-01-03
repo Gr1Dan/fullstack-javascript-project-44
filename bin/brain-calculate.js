@@ -18,9 +18,8 @@ const shuffledOperations = operations.sort(() => Math.random() - 0.5);
         }
         switch (operation) {
             case 'addition':
-                console.log(`What is result of ${randomNum1} + ${randomNum2}`)
-                const answe1 = readlineSync.question()
-                const answer1 = answe1 - 0;
+                console.log(`What is result of ${randomNum1} + ${randomNum2}`);
+                const answer1 = readlineSync.question() - 0;
                 const correctAnswer1 = randomNum1 + randomNum2;
                 if (answer1 === correctAnswer1) {
                     console.log('correct');
@@ -32,9 +31,8 @@ const shuffledOperations = operations.sort(() => Math.random() - 0.5);
                     break;
                 }
             case 'subtraction':
-                console.log(`What is result of ${randomNum1} - ${randomNum2}`)
-                const answe2 = readlineSync.question()
-                const answer2 = answe2 - 0;
+                console.log(`What is result of ${randomNum1} - ${randomNum2}`);
+                const answer2 = readlineSync.question() - 0;
                 const correctAnswer2 = randomNum1 - randomNum2;
                 if (answer2 === correctAnswer2) {
                     console.log('correct');
@@ -43,13 +41,11 @@ const shuffledOperations = operations.sort(() => Math.random() - 0.5);
                 } else {
                     results = -1
                     break;
-
                 }
 
             case 'multiplication':
-                console.log(`What is result of ${randomNum1} * ${randomNum2}`)
-                const answe3 = readlineSync.question()
-                const answer3 = answe3 - 0;
+                console.log(`What is result of ${randomNum1} * ${randomNum2}`);
+                const answer3 = readlineSync.question() - 0;
                 const correctAnswer3 = randomNum1 * randomNum2;
                 if (answer3 === correctAnswer3) {
                     console.log('correct');
