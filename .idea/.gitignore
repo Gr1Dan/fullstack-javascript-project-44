@@ -7,3 +7,6 @@
 /dataSources/
 /dataSources.local.xml
 /node_modules/
+modules.xml
+vcs.xml
+fullstack-javascript-project-44.iml
