@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "link": "^2.1.1"
+    "link": "^2.1.1",
+    "readline-sync": "^1.4.10"
   }
 }
