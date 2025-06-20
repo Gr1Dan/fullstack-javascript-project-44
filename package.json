@@ -15,5 +15,8 @@
   "dependencies": {
     "link": "^2.1.1",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0"
   }
 }
