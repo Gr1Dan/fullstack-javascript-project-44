@@ -1,4 +1,4 @@
-import gameCount from "../index.js";
+import gameCount from '../index.js'
 import {randomNum, randomNumOf10, randomNumAndItemOfArr} from "../randomNum.js";
 
 const gameRule = 'What number is missing in the progression?';

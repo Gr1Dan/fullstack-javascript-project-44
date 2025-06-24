@@ -1,6 +1,6 @@
-import {randomItemOfArr, randomNum} from "../randomNum.js";
-import gameCount from "../index.js";
-const gameRule = 'What is the result of the expression?';
+import {randomItemOfArr, randomNum} from '../randomNum.js'
+import gameCount from '../index.js'
+const gameRule = 'What is the result of the expression?'
 
 
 const ops = ['+', '-', '*'];
