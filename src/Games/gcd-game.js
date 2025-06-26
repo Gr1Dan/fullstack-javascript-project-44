@@ -1,7 +1,7 @@
 import { randomNum} from '../randomNum.js'
 import gameCount from '../index.js'
 
-const gameRule = 'Find the greatest common divisor of given numbers.';
+const gameRule = 'Find the greatest common divisor of given numbers.'
 
 
 const solve = (num1, num2) => {

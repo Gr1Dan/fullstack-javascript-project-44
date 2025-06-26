@@ -1,7 +1,7 @@
 import { randomNum} from '../randomNum.js'
 import gameCount from '../index.js'
 
-const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 const isEven = (num) => num % 2 === 0;

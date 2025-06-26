@@ -1,7 +1,7 @@
 import gameCount from '../index.js'
-import {randomNum, randomNumOf10, randomNumAndItemOfArr} from "../randomNum.js";
+import {randomNum, randomNumOf10, randomNumAndItemOfArr} from "../randomNum.js"
 
-const gameRule = 'What number is missing in the progression?';
+const gameRule = 'What number is missing in the progression?'
 
 
 const getArray = () => {

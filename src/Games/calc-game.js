@@ -2,9 +2,7 @@ import {randomItemOfArr, randomNum} from '../randomNum.js'
 import gameCount from '../index.js'
 const gameRule = 'What is the result of the expression?'
 
-
 const ops = ['+', '-', '*'];
-
 
 const solve = (num1, num2, op) => {
     let result;
@@ -20,7 +18,6 @@ const solve = (num1, num2, op) => {
     return String(result);
 };
 
-
 const gameData = () => {
     const num1 = randomNum();
     const num2 = randomNum();
@@ -29,7 +26,6 @@ const gameData = () => {
     const expectedAnswer = solve(num1, num2, op);
     return [task, expectedAnswer];
 };
-
 
 const calculateGame = () => gameCount(gameRule, gameData);
 
