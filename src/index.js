@@ -9,7 +9,7 @@ const gameCount = (gameRule, gameData) => {
   console.log(gameRule)
   let round = 0;
   while (round < roundsCount) {
-    const [task, expectedAnswer] = gameData();
+    const [task, expectedAnswer] = gameData()
     console.log(`Question: ${task}`)
     const userAnswer = readlineSync.question('Your answer: ')
     if (expectedAnswer === userAnswer) {
