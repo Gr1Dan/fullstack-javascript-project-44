@@ -8,12 +8,11 @@ const isEven = (num) => num % 2 === 0;
 
 
 const gameData = () => {
-    const task = randomNum();
-    const expectedAnswer = isEven(task) ? 'yes' : 'no';
-    return [task, expectedAnswer];
-};
+    const task = randomNum()
+    const expectedAnswer = isEven(task) ? 'yes' : 'no'
+    return [task, expectedAnswer]
+}
 
+const evenGame = () => gameCount(gameRule, gameData)
 
-const evenGame = () => gameCount(gameRule, gameData);
-
-export default evenGame;
+export default evenGame
