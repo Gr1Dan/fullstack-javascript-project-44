@@ -8,10 +8,10 @@ const gameData = () => {
   let expectedAnswer = null
   if (task % 2 === 0) {
     expectedAnswer = 'yes'
-  } else {
+  }
+  else {
     expectedAnswer = 'no'
   }
-
   return [task, expectedAnswer]
 }
 
