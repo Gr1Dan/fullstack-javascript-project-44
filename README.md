@@ -1,6 +1,6 @@
 # Проект BRAIN-GAMES 
-### Данный проект выполнен студентом онлайн школы Hexlet при прохождении программы fullstack разработчика Node.js
-### Код проходит автоматическую проверку Hexlet
+### Данный проект выполнен студентом онлайн школы HEXLET при прохождении программы fullstack разработчика Node.js
+### Код проходит автоматическую проверку HEXLET
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Gr1Dan/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Gr1Dan/fullstack-javascript-project-44/actions)
 # Краткая информация
