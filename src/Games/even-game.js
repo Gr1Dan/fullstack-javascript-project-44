@@ -11,6 +11,7 @@ const gameData = () => {
   } else {
     expectedAnswer = 'no'
   }
+
   return [task, expectedAnswer]
 }
 
