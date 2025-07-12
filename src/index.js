@@ -16,7 +16,7 @@ const gameCount = (gameRule, gameData) => {
       console.log('Correct!')
       round += 1
     }
-      else {
+    else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expectedAnswer}'.\nLet's try again, ${userName}!`)
       return
     }
