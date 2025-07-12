@@ -9,7 +9,7 @@ const solve = (num1, num2) => {
   }
   for (let div = Math.min(num1, num2); div > 0; div -= 1) {
     if (num1 % div === 0 && num2 % div === 0) {
-    return String(div)
+      return String(div)
     }
   }
   return undefined
