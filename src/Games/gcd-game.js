@@ -5,12 +5,12 @@ const gameRule = 'Find the greatest common divisor of given numbers.'
 
 const solve = (num1, num2) => {
   if (num1 === num2) {
-  return num1
+    return num1
   }
   for (let div = Math.min(num1, num2); div > 0; div -= 1) {
-  if (num1 % div === 0 && num2 % div === 0) {
-  return String(div)
-  }
+    if (num1 % div === 0 && num2 % div === 0) {
+    return String(div)
+    }
   }
   return undefined
 }

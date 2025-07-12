@@ -6,12 +6,16 @@ const ops = ['+', '-', '*']
 
 const solve = (num1, num2, op) => {
   let result
-  if (op === '+')
-  { result = num1 + num2 }
-  if (op === '-')
-  { result = num1 - num2 }
+  if (op === '+') {
+  result = num1 + num2
+  }
+  if (op === '-') {
+  result = num1 - num2
+  }
   if (op === '*')
-  { result = num1 * num2 }
+  {
+  result = num1 * num2
+  }
   return String(result)
 }
 
