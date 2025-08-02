@@ -8,7 +8,7 @@ const gameCount = (gameRule, gameData) => {
   console.log(`Hello, ${userName}!`)
   console.log(gameRule)
   let round = 0
-  while (round < roundsCount) {
+  for (let i = 0; i < roundsCount; i++) {
     const [task, expectedAnswer] = gameData()
     console.log(`Question: ${task}`)
     const userAnswer = readlineSync.question('Your answer: ')

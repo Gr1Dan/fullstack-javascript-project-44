@@ -1,13 +1,14 @@
-export const randomNum = () => Math.round(Math.random() * 101)
-
-export const randomNumOf10 = () => Math.round(Math.random() * 11)
-
-export const randomItemOfArr = (arr) => {
-  const randomIndex = Math.floor(Math.random() * arr.length)
-  return arr[randomIndex]
-}
-
-export const randomNumAndItemOfArr = (arr) => {
-  const randomIndex = Math.floor(Math.random() * arr.length)
-  return [randomIndex, arr[randomIndex]]
+export const randomNum = (numbers, arr) => {
+  switch (numbers) {
+    case 100:
+    return Math.round(Math.random() * 101);
+    case 10:
+    return  Math.round(Math.random() * 11);
+    case 'ItemOfArr':
+    const randomIndex1 = Math.floor(Math.random() * arr.length)
+    return arr[randomIndex1];
+    case 'NumAndItemsOfArr':
+    const randomIndex2 = Math.floor(Math.random() * arr.length)
+    return [randomIndex2, arr[randomIndex2]]
+  }
 }

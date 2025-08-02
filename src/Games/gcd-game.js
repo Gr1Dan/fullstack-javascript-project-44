@@ -3,7 +3,7 @@ import gameCount from '../index.js'
 
 const gameRule = 'Find the greatest common divisor of given numbers.'
 
-const solve = (num1, num2) => {
+const gtcGCD = (num1, num2) => {
   if (num1 === num2) {
     return num1
   }
@@ -16,10 +16,10 @@ const solve = (num1, num2) => {
 }
 
 const gameData = () => {
-  const num1 = randomNum()
-  const num2 = randomNum()
+  const num1 = randomNum(100)
+  const num2 = randomNum(100)
   const task = `${num1} ${num2}`
-  const expectedAnswer = solve(num1, num2)
+  const expectedAnswer = gtcGCD(num1, num2)
   return [task, expectedAnswer]
 }
 

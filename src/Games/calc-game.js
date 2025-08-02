@@ -1,4 +1,4 @@
-import { randomItemOfArr, randomNum } from '../randomNum.js'
+import { randomNum } from '../randomNum.js'
 import gameCount from '../index.js'
 const gameRule = 'What is the result of the expression?'
 
@@ -19,9 +19,9 @@ const solve = (num1, num2, op) => {
 }
 
 const gameData = () => {
-  const num1 = randomNum()
-  const num2 = randomNum()
-  const op = randomItemOfArr(ops)
+  const num1 = randomNum(100)
+  const num2 = randomNum(100)
+  const op = randomNum('ItemOfArr',ops)
   const task = `${num1} ${op} ${num2}`
   const expectedAnswer = solve(num1, num2, op)
   return [task, expectedAnswer]

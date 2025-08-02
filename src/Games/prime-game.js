@@ -16,7 +16,7 @@ const isPrime = (num) => {
 }
 
 const gameData = () => {
-  const num = randomNum()
+  const num = randomNum(100)
   const task = num
   const expectedAnswer = isPrime(num)
   return [task, expectedAnswer]
