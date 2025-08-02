@@ -21,7 +21,7 @@ const solve = (num1, num2, op) => {
 const gameData = () => {
   const num1 = randomNum(100)
   const num2 = randomNum(100)
-  const op = randomNum('ItemOfArr',ops)
+  const op = randomNum('ItemOfArr', ops)
   const task = `${num1} ${op} ${num2}`
   const expectedAnswer = solve(num1, num2, op)
   return [task, expectedAnswer]
