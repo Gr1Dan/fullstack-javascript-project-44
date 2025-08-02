@@ -15,7 +15,7 @@ const generateSequence = () => {
 
 const gameData = () => {
   const arr = generateSequence()
-  const takeOneElement = randomNum('NumAndItemsOfArr',arr)
+  const takeOneElement = randomNum('NumAndItemsOfArr', arr)
   const expectedAnswer = String(takeOneElement[1])
   arr[takeOneElement[0]] = '..'
   const task = `${arr.join(' ')}`

@@ -7,13 +7,13 @@ const gameData = () => {
   const task = randomNum(100)
   let expectedAnswer = null
   const isEven = task % 2 === 0
-  switch (isEven){
+  switch (isEven) {
     case true:
       expectedAnswer = 'yes'
-      return [task, expectedAnswer];
+      return [task, expectedAnswer]
     case false:
       expectedAnswer = 'no'
-      return [task, expectedAnswer];
+      return [task, expectedAnswer]
   }
 }
 
